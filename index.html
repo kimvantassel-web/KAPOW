@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #FDF3F6;
+      font-family: 'EB Garamond', Georgia, serif;
+      color: #5C2C3B;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      overflow: hidden;
+    }
+
+    .dashboard {
+      display: flex;
+      width: 100%;
+      max-width: 1100px;
+      height: 88vh;
+      align-items: center;
+    }
+
+    .panel {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+    }
+
+    .panel-left {
+      border-right: 1px solid #E5CED6;
+      justify-content: flex-start;
+      gap: 20px;
+    }
+
+    .panel-right {
+      justify-content: flex-end;
+      text-align: right;
+    }
+
+    /* Pastel Arch with Flower */
+    .arch {
+      width: 68px;
+      height: 94px;
+      background-color: #F3D1DC;
+      border-radius: 40px 40px 4px 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    /* Typography */
+    .overline {
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #9A6B7A;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 400;
+      font-style: italic;
+      color: #4A1E2C;
+      line-height: 1.1;
+      margin-bottom: 6px;
+    }
+
+    h1 span {
+      color: #A65E74;
+    }
+
+    .subtext {
+      font-size: 14px;
+      font-style: italic;
+      color: #8C5868;
+      margin-bottom: 14px;
+    }
+
+    .prompt {
+      font-size: 20px;
+      font-style: italic;
+      color: #4A1E2C;
+      margin-bottom: 14px;
+    }
+
+    /* Pill Buttons */
+    .pill-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 18px;
+      border: 1px solid #C997A6;
+      border-radius: 999px;
+      text-decoration: none;
+      color: #6D3B4C;
+      font-size: 14px;
+      transition: background-color 0.2s ease;
+    }
+
+    .pill-btn:hover {
+      background-color: #F6E2E8;
+    }
+
+    .dot {
+      width: 6px;
+      height: 6px;
+      background-color: #E2A3B7;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="dashboard">
+    <!-- Left Side -->
+    <div class="panel panel-left">
+      <div class="arch">✿</div>
+      <div>
+        <div class="overline">Good Morning</div>
+        <h1>welcome in, <span>lovely</span></h1>
+        <p class="subtext">Ready to continue on?</p>
+        <a href="https://notion.so" target="_blank" rel="noopener noreferrer" class="pill-btn">
+          <span class="dot"></span>
+          <span>Get ADHD Girl OS</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Right Side -->
+    <div class="panel panel-right">
+      <div>
+        <div class="overline">For This Morning</div>
+        <p class="prompt">Clean the house bitch. </p>
+        <a href="https://notion.so" target="_blank" rel="noopener noreferrer" class="pill-btn">
+          <span class="dot"></span>
+          <span>See the complete collection</span>
+          <span>→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
